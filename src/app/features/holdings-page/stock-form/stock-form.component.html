@@ -1,0 +1,100 @@
+<!-- <form [formGroup]="form" (ngSubmit)="submit()" class="form-scroll-container" style="max-width: 1200px; margin: 0 auto;">
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="transactionType">Transaction Type</label>
+      <select id="transactionType" formControlName="transactionType">
+        <option value="Buy">Buy</option>
+        <option value="Sell">Sell</option>
+      </select>
+    </div>
+
+    <div class="form-group" >
+      <label for="stockName" >Stock Name</label>
+      <app-stock-search
+        id="stockName"
+        [placeholder]="'Search for stocks...'"
+        (symbolSelected)="onstockSelected($event)"
+        [disabled]="isEditMode"
+      >
+      </app-stock-search>
+    </div>
+
+    <div class="form-group">
+      <label for="dematAccount">Demat Account</label>
+      <input id="dematAccount" formControlName="dematAccount" type="text" />
+    </div>
+
+    <div class="form-group">
+      <label for="purchaseDate">Date of Investment</label>
+      <input id="purchaseDate" formControlName="purchaseDate" type="date" />
+    </div>
+
+    <div class="form-group">
+      <label for="numberOfShares">Number of Shares</label>
+      <input id="numberOfShares" formControlName="numberOfShares" type="number" />
+    </div>
+
+    <div class="form-group">
+      <label for="brokerage">Brokerage</label>
+      <input id="brokerage" formControlName="brokerage" type="number" />
+    </div>
+
+    <div class="form-group">
+      <label for="brokerageType">Brokerage Type</label>
+      <select id="brokerageType" formControlName="brokerageType">
+        <option value="%">%</option>
+        <option value="rs">Rs</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="purchasePrice">Purchase Price</label>
+      <input id="purchasePrice" formControlName="purchasePrice" type="number" />
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" [disabled]="form.invalid">Save</button>
+    <button type="button" (click)="cancel.emit()">Cancel</button>
+  </div>
+</form> -->
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>Transaction Type</label>
+  <select formControlName="transactionType">
+    <option value="Buy">Buy</option>
+    <option value="Sell">Sell</option>
+  </select>
+ 
+  <label>stock Name</label>
+  <app-stock-search
+    [placeholder]="'Search for stocks...'"
+    (symbolSelected)="onstockSelected($event)"
+    [disabled]="isEditMode"
+  >
+  </app-stock-search>
+ 
+  <label>Demat Account</label>
+  <input formControlName="dematAccount" type="text" />
+ 
+  <label>Date of Investment</label>
+  <input formControlName="purchaseDate" type="date" />
+ 
+  <label>Number of Shares</label>
+  <input formControlName="numberOfShares" type="number" />
+ 
+  <label>Brokerage</label>
+  <input formControlName="brokerage" type="number" />
+  <select formControlName="brokerageType">
+    <option value="%">%</option>
+    <option value="rs">Rs</option>
+  </select>
+ 
+  <label>Purchase Price</label>
+  <input formControlName="purchasePrice" type="number" />
+ 
+  <button type="submit" [disabled]="form.invalid">Save</button>
+  <button type="button" (click)="cancel.emit()">Cancel</button>
+</form>
+ 
+ 
