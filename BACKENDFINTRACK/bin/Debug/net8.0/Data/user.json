@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Name": "shamitha",
+    "Email": "shamitha@gmail.com",
+    "UserName": "shamitha",
+    "Password": "shamitha924",
+    "ConfirmPassword": "shamitha924",
+    "SecurityQuestion": "What is your pet\u0027s name?",
+    "SecurityAnswer": "yeontan"
+  },
+  {
+    "userId": 2,
+    "Name": "shamitha",
+    "Email": "shamitha1@gmail.com",
+    "UserName": "shamitha",
+    "Password": "shamitha924",
+    "ConfirmPassword": "shamitha924",
+    "SecurityQuestion": "What is your pet\u0027s name?",
+    "SecurityAnswer": "yeontan"
+  },
+  {
+    "userId": 3,
+    "Name": "sathya",
+    "Email": "sathya123@gmail.com",
+    "UserName": "sathya2003",
+    "Password": "Password@123",
+    "ConfirmPassword": "Password@123",
+    "SecurityQuestion": "What is your favorite book?",
+    "SecurityAnswer": "twisted"
+  },
+  {
+    "UserId": 4,
+    "Name": "reddy",
+    "Email": "r@gmail.com",
+    "UserName": "Reddy",
+    "Password": "Asdfgh@123",
+    "ConfirmPassword": "Asdfgh@123",
+    "SecurityQuestion": "What was your childhood nickname?",
+    "SecurityAnswer": "reddy"
+  }
+]
